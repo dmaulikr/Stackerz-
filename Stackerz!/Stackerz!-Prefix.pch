@@ -1,0 +1,53 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#define IS_IPHONE ( UI_USER_INTERFACE_IDIOM ( ) == UIUserInterfaceIdiomPhone )
+
+#define IS_IPAD ( UI_USER_INTERFACE_IDIOM ( ) == UIUserInterfaceIdiomPad )
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+//For your convenience, make sure blocks and spaces are divisible by the size of the screen so that they can fit on the screen without leaking off
+// over the edges of the screen bounds
+#define FIRST_BLOCK_IMAGE_NAME @"Block.png"
+#define FIRST_SPACE_IMAGE_NAME @"SpaceBlock.png"
+
+//Game play mechanics
+#define NUMBER_OF_COLUMNS ((int) self.size.width / _blockTexture.size.width)
+#define NUMBER_OF_ROWS_IPHONE ((int) ((self.size.height - 60) / _blockTexture.size.height))
+#define NUMBER_OF_ROWS_IPAD ((int) ((self.size.height - 100) / _blockTexture.size.height))
+#define NUMBER_OF_BLOCKS ((int) _numOfColumns / 3)
+#define STARTING_DELAY_DURATION ((double) 0.15)
+
+// UI image names
+#define RESULTS_OUTPUT_IMAGE @"ResultsOutput.png"
+#define RETRY_BUTTON_IMAGE @"RetryButton.png"
+#define UPGRADE_BUTTON_IMAGE @"UpgradeButton.png"
+#define SHARE_BUTTON_IMAGE @"ShareButton.png"
+#define LEADERBOARD_BUTTON_IMAGE @"LeaderboardButton.png"
+#define NEXT_PAGE_BUTTON_IMAGE @"NextPageButton.png"
+#define MENU_BUTTON_IMAGE @"MenuButton.png"
+
+//Leaderboard ID
+#define LEADERBOARD_ID @"com.caleb.Stackerz_Leaderboard"
+
+#define EMAIL_TEXT @"I just stacked %i blocks up! Do you think you can beat me? Come play at http://apple.com"
+
+//Ad Mob ID
+#define GOOGLE_AD_ID @"ca-app-pub-8493399682392879/2177552743"
+
+//Chartboost Ads
+#define CHARTBOOST_APP_ID @"4f21c409cd1cb2fb7000001d"
+#define CHARTBOOST_APP_SIGNATURE @"92e2de2fd7070327bdeb54c15a5295309c6fcd2e"

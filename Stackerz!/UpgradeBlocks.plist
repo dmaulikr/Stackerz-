@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AverageHeights</key>
+	<array>
+		<integer>0</integer>
+		<string>50</string>
+		<integer>100</integer>
+		<integer>500</integer>
+		<integer>1000</integer>
+		<integer>1500</integer>
+	</array>
+	<key>TopMax</key>
+	<array>
+		<integer>0</integer>
+		<string>20</string>
+		<integer>30</integer>
+		<integer>40</integer>
+		<integer>50</integer>
+		<integer>60</integer>
+	</array>
+	<key>Spaces</key>
+	<array>
+		<string>SpaceBlock.png</string>
+		<string>Space5.png</string>
+		<string>Space1.png</string>
+		<string>Space2.png</string>
+		<string>Space3.png</string>
+		<string>Space4.png</string>
+	</array>
+	<key>Blocks</key>
+	<array>
+		<string>Block.png</string>
+		<string>Block5.png</string>
+		<string>Block1.png</string>
+		<string>Block2.png</string>
+		<string>Block3.png</string>
+		<string>Block4.png</string>
+	</array>
+</dict>
+</plist>
